@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ccc;
+}
+
+.sign-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sign-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 6rem;
+}
+
+/* input box  */
+.input_box {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.input_box::placeholder {
+  color: #ccc;
+}
+
+/* flex items-center gap-[10px] text-gray-300 p-[20px] */
+.menuLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 18px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #ece9e9;
+}
+
+.menuLinks:hover,
+.active {
+  background-color: aliceblue;
+  color: #222;
+  border-radius: 10px;
+}
+
+/* sticky top-[40px] aside*/
+.aside {
+  position: sticky;
+  top: 40px;
+}
+
+/* text-gray-300 capitalize */
+.aside_span {
+  text-transform: capitalize;
+  color: #ece9e9;
+  margin-bottom: 1rem;
+  display: block;
+}
