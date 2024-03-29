@@ -15,7 +15,7 @@ export const NavbarLinks = [
   },
   {
     name: "Products",
-    link: "/",
+    link: "/products",
   },
   {
     name: "Shop",

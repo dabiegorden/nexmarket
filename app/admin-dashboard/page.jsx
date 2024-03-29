@@ -1,4 +1,12 @@
-import { Card, Chart, RightSideBar, Transactions } from "@/app/shared";
+import {
+  Chart,
+  OrdersCard,
+  ProductCard,
+  RightSideBar,
+  Sales,
+  SalesCard,
+  Transactions,
+} from "@/app/shared";
 import React from "react";
 
 const Dashboard = () => {
@@ -6,8 +14,9 @@ const Dashboard = () => {
     <div className="flex gap-[20px] mt-[20px]">
       <div className="flex-[3] flex flex-col gap-[18px]">
         <div className="flex justify-between gap-[18px]">
-          <Card />
-          <Card />
+          <ProductCard />
+          <OrdersCard />
+          <SalesCard />
         </div>
 
         <Transactions />

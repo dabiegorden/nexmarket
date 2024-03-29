@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 * {
-  border: none;
-  outline: none;
+  /* border: none; */
+  /* outline: none; */
   box-sizing: border-box;
 }
 
@@ -32,6 +32,78 @@ body {
   border: 1px solid #ccc;
   padding: 5px 10px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.nav_search {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .input_box {
+    padding: 4px 5px;
+  }
+
+  .nav_search {
+    display: block;
+  }
+
+  .search-product {
+    display: block;
+    position: absolute;
+    top: 10rem;
+    right: 4rem;
+  }
+
+  .input {
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+/* admin_search_icon */
+.admin_search_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: rgb(145, 5, 245);
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.3rem 0.3rem;
+}
+
+.input::placeholder {
+  font-size: 14px;
+}
+
+/* admin_input */
+.admin_input::placeholder {
+  font-size: 14px;
+}
+
+.admin_input {
+  outline: none;
+  border: none;
+}
+
+/* search_mobile */
+.search_mobile {
+  font-size: 34px;
+  background: rgb(137, 4, 231);
+  padding: 0.5rem 0.2rem;
+  cursor: pointer;
+  color: #ece9e9;
+  border-radius: 50%;
+}
+
+/* search_icon */
+.search_icon {
+  font-size: 30px;
+  background: rgb(144, 8, 241);
+  padding: 0.5rem 0.2rem;
+  cursor: pointer;
+  color: #ece9e9;
+  border-radius: 50%;
 }
 
 .input_box::placeholder {
@@ -69,4 +141,130 @@ body {
   color: #ece9e9;
   margin-bottom: 1rem;
   display: block;
+}
+
+/* navbar on mobile screen styles */
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* menu bar animations on mobile screens */
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* serchIcon css styles */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+/* Orders */
+.Orders {
+  border-bottom: 3px solid rgb(148, 8, 248);
+}
+
+.Products {
+  border-bottom: 3px solid rgba(15, 177, 15, 0.877);
+}
+
+.Sales {
+  border-bottom: 3px solid rgb(231, 82, 82);
+}
+
+.Right {
+  border-bottom: 3px solid rgb(167, 164, 164);
+}
+
+/* Product input styling */
+.product_input {
+  background-color: rgb(243, 238, 238);
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.product_input::placeholder {
+  color: #222;
+  font-size: 0.8rem;
+  font-size: bolder;
 }

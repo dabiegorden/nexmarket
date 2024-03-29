@@ -13,7 +13,7 @@ import {
 
 const Home = () => {
   return (
-    <main className="main">
+    <main className="pt-[10rem] px-[6rem]">
       <Navbar />
       <Hero />
       <Banner />

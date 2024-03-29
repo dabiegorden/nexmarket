@@ -10,8 +10,8 @@ export default function RootLayout({ children }) {
       <body>
         {/* [#151c2c] */}
         {/* bg-[#182237] */}
-        <main className="bg-white  flex">
-          <div className="flex-1 bg-blue-700 pl-[10px] pt-[18px] pr-[20px] h-[100vh]">
+        <main className="flex">
+          <div className="flex-1 bg-blue-700 pl-[10px] pt-[18px] pr-[20px]">
             <AdminSidebar />
           </div>
 
