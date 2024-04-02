@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 
-const Product = () => {
+const FeaturedProducts = () => {
   const [file, setFile] = useState("");
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -86,4 +86,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default FeaturedProducts;

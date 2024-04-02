@@ -2,6 +2,7 @@ import {
   MdBorderAll,
   MdDashboard,
   MdHelp,
+  MdOutlineDesignServices,
   MdPeople,
   MdReport,
   MdSettings,
@@ -104,6 +105,11 @@ export const SidebarLinks = [
         title: "Teams",
         path: "/admin-dashboard/teams",
         icon: <MdPeople />,
+      },
+      {
+        title: "UI",
+        path: "/admin-dashboard/ui",
+        icon: <MdOutlineDesignServices />,
       },
       {
         title: "Help",

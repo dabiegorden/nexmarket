@@ -27,6 +27,13 @@ body {
   margin-top: 6rem;
 }
 
+/* arrow styling */
+.arrow {
+  font-size: 16px;
+  /* height: 24px;
+  width: 24px; */
+}
+
 /* input box  */
 .input_box {
   border: 1px solid #ccc;
@@ -61,6 +68,9 @@ body {
     width: 100%;
   }
 }
+.input::placeholder {
+  font-size: 14px;
+}
 
 /* admin_search_icon */
 .admin_search_icon {
@@ -70,10 +80,6 @@ body {
   color: #fff;
   border-radius: 50%;
   padding: 0.3rem 0.3rem;
-}
-
-.input::placeholder {
-  font-size: 14px;
 }
 
 /* admin_input */
@@ -252,6 +258,10 @@ body {
 
 .Right {
   border-bottom: 3px solid rgb(167, 164, 164);
+}
+
+.ui {
+  border-bottom: 3px solid rgb(137, 4, 231);
 }
 
 /* Product input styling */

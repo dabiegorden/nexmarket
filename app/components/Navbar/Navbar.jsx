@@ -27,8 +27,8 @@ const Navbar = () => {
       <nav className="flex gap-3 justify-between items-center px-[6rem] py-4 bg-white border-b border-b-gray-200 fixed w-full z-[1000] left-0 top-0 sMdesktop:px-[2rem] mobile:px-0 sMobile:px-0">
         <Link href={"/"} className="">
           {/* <Image src={Logo} alt="Logo" className="object-contain" /> */}
-          <p className="text-black text-xl capitalize">
-            nex<span className="text-indigo-600">market</span>
+          <p className="text-black text-xl uppercase">
+            next<span className="text-indigo-600">market</span>
           </p>
         </Link>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
           <form onSubmit={handleSubmit} className="input_box">
             <input
               placeholder="search for items..."
-              className="input"
+              className="input border-none outline-none"
               value={searchItems}
               onChange={(event) => setSearchItems(event.target.value)}
             />
@@ -74,7 +74,11 @@ const Navbar = () => {
         <ul className="flex gap-12 sMdesktop:gap-4 tablet:hidden">
           {NavbarLinks.map((item) => (
             <li key={item.name}>
-              <Link key={item.name} href={item.link}>
+              <Link
+                key={item.name}
+                href={item.link}
+                className="hover:text-indigo-600 hover:transition hover:duration-300"
+              >
                 {item.name}
               </Link>
             </li>

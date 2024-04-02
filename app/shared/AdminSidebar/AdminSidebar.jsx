@@ -2,17 +2,33 @@
 
 import { SidebarLinks } from "@/app/constants";
 // import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import MenuLink from "./MenuLink/MenuLink";
+import { MdClose, MdMenu } from "react-icons/md";
 
 const Sidebar = () => {
+  const [menu, setMenu] = useState(false);
+
   return (
     <aside className="aside">
-      <div>
+      <div className="">
         {SidebarLinks.map((item) => (
           <ul key={item.title}>
             <li key={item.title}>
-              <span className="aside_span">{item.title}</span>
+              <span className="flex justify-between items-center mb-4 capitalize text-white">
+                {item.title}{" "}
+                {menu ? (
+                  <MdClose
+                    onClick={() => setMenu(false)}
+                    className="text-[24px] cursor-pointer"
+                  />
+                ) : (
+                  <MdMenu
+                    onClick={() => setMenu(true)}
+                    className="text-[24px] cursor-pointer"
+                  />
+                )}
+              </span>
               {item.list.map((item) => (
                 <MenuLink item={item} key={item.title} />
               ))}
