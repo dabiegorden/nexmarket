@@ -1,11 +1,9 @@
 "use client";
-import Logo from "../../../public/assets/Logo.png";
-import Image from "next/image";
+
 import { NavbarLinks } from "../../constants";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0/client";
 import { MdClose, MdMenu, MdSearch } from "react-icons/md";
-import { CiSearch } from "react-icons/ci";
 import { useState } from "react";
 import Login from "@/app/login";
 import Logout from "@/app/logout";
