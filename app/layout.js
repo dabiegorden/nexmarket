@@ -1,9 +1,8 @@
 import { Inter } from "next/font/google";
 import "../app/shared/globals.css";
 
-import { UserProvider } from "@auth0/nextjs-auth0/client";
-
 const inter = Inter({ subsets: ["latin"] });
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata = {
   title: "nexmarket",
@@ -12,10 +11,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <UserProvider>
+    <ClerkProvider>
+      <html lang="en">
         <body className={inter.className}>{children}</body>
-      </UserProvider>
-    </html>
+      </html>
+    </ClerkProvider>
   );
 }

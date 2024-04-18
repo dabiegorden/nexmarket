@@ -1,27 +1,13 @@
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import React from "react";
-import {
-  Banner,
-  FeaturedProducts,
-  Footer,
-  Hero,
-  Navbar,
-  NewArrivals,
-  ProductCategories,
-  ProductListing,
-  SpecialOffers,
-} from "./components";
 
 const Home = () => {
   return (
-    <main className="pt-[10rem]">
+    <main>
       <Navbar />
       <Hero />
-      <Banner />
-      <NewArrivals />
-      <FeaturedProducts />
-      <ProductCategories />
-      <ProductListing />
-      <SpecialOffers />
       <Footer />
     </main>
   );

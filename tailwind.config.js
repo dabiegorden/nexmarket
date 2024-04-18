@@ -78,6 +78,7 @@ module.exports = {
         sMobile: { max: "400px" },
         ssMobile: { max: "360px" },
         sMdesktop: { max: "939px" },
+        extraSmallDevice: { max: "320px" },
       },
     },
   },
